@@ -9,7 +9,7 @@ function App() {
     e.preventDefault();
     let amount = parseInt(count);
     if (count <= 0) {
-      amount = 1
+      amount = 0
     }
     if (count > 8) {
       amount = 8
@@ -19,6 +19,7 @@ function App() {
   return (
     <section className="section-center">
       <h3>Tired of boring lorem ipsum?</h3>
+      <h4 style={{ fontSize: 23 }}>Max amount of paragraphs is 8</h4>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">
           paragraphs:
